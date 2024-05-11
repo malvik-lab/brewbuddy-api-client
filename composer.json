@@ -1,0 +1,34 @@
+{
+  "name": "malvik-lab/brewbuddy-api-client",
+  "description": "",
+  "keywords": [],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Vittorio Malaspina",
+      "email": "vittorio.malaspina@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "MalvikLab\\BrewBuddyClient\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "require": {
+    "php": "^8.2",
+    "guzzlehttp/guzzle": "^7.8",
+    "rakit/validation": "^1.4",
+    "cuyz/valinor": "^1.11"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^10.5",
+    "phpstan/phpstan": "^1.10"
+  },
+  "minimum-stability": "stable"
+}

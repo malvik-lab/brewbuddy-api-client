@@ -23,6 +23,7 @@ final class BeerDTO implements DTOInterface
      * @param bool $pastorized
      * @param int $minimumServingTemperature
      * @param int $maximumServingTemperature
+     * @param BeerTranslationDTO[] $translations
      * @param TypologyDTO $typology
      * @param ImageDTO $image
      * @param BreweryDTO $brewery
@@ -47,6 +48,7 @@ final class BeerDTO implements DTOInterface
         public bool $pastorized,
         public int $minimumServingTemperature,
         public int $maximumServingTemperature,
+        public array $translations,
         public TypologyDTO $typology,
         public ImageDTO $image,
         public BreweryDTO $brewery,

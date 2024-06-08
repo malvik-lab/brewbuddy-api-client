@@ -11,6 +11,7 @@ final readonly class BeerTranslationDTO implements DTOInterface
      * @param string $languageId
      * @param string $beerId
      * @param string $slogan
+     * @param string $description
      * @param LanguageDTO $language
      */
     public function __construct(
@@ -18,6 +19,7 @@ final readonly class BeerTranslationDTO implements DTOInterface
         public string $languageId,
         public string $beerId,
         public string $slogan,
+        public string $description,
         public LanguageDTO $language
     ) {}
 }

@@ -11,6 +11,9 @@ final readonly class ImageDTO implements DTOInterface
         public string $url,
         public string $filename,
         public string $extension,
+        public int $width,
+        public int $height,
+        public string $mime,
         public int $size
     ) {}
 }

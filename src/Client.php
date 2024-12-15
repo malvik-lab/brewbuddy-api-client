@@ -10,7 +10,7 @@ use MalvikLab\BrewBuddyClient\Exceptions\InvalidClientVersionException;
 class Client
 {
     const  NAME = 'BREWBUDDY API CLIENT';
-    const  VERSION = '1.0.3';
+    const  VERSION = '1.0.4';
     const  CLIENT_V1 = 'V1';
 
     /**

@@ -11,6 +11,7 @@ use GuzzleHttp\Exception\GuzzleException;
 use MalvikLab\BrewBuddyClient\Clients\V1\Client;
 use MalvikLab\BrewBuddyClient\Clients\V1\DTO\BeerCollectionResponseDTO;
 use MalvikLab\BrewBuddyClient\Clients\V1\DTO\BeerResponseDTO;
+use MalvikLab\BrewBuddyClient\Clients\V1\Options\RequestOption;
 use MalvikLab\BrewBuddyClient\Exceptions\InvalidArgumentException;
 use PHPUnit\Framework\TestCase;
 
@@ -34,7 +35,12 @@ final class BeerTest extends TestCase
      */
     public function testCollection(): void
     {
-        $response = $this->brewBuddyClient->getBeers();
+        $requestOption = (new RequestOption())
+            ->setPage(1)
+            ->setLimit(100)
+        ;
+
+        $response = $this->brewBuddyClient->getBeers($requestOption);
 
         $this->assertInstanceOf(BeerCollectionResponseDTO::class, $response);
     }

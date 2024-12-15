@@ -27,9 +27,10 @@ final class BeerDTO implements DTOInterface
      * @param TypologyDTO $typology
      * @param ImageDTO $image
      * @param BreweryDTO $brewery
-     * @param array<GlassDTO> $recommendedGlasses
+     * @param GlassDTO[] $recommendedGlasses
      * @param FermentationMethodDTO $fermentationMethod
      * @param FoamDTO $foam
+     * @param IngredientDTO[] $ingredients
      */
     public function __construct(
         public string $id,
@@ -54,6 +55,7 @@ final class BeerDTO implements DTOInterface
         public BreweryDTO $brewery,
         public array $recommendedGlasses,
         public FermentationMethodDTO $fermentationMethod,
-        public FoamDTO $foam
+        public FoamDTO $foam,
+        public array $ingredients
     ) {}
 }

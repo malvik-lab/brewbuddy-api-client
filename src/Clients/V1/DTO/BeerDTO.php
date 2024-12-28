@@ -20,7 +20,7 @@ final class BeerDTO implements DTOInterface
      * @param float $ibu
      * @param float $srm
      * @param bool $filtrated
-     * @param bool $pastorized
+     * @param bool $pasteurized
      * @param int $minimumServingTemperature
      * @param int $maximumServingTemperature
      * @param BeerTranslationDTO[] $translations
@@ -46,7 +46,7 @@ final class BeerDTO implements DTOInterface
         public float $ibu,
         public float $srm,
         public bool $filtrated,
-        public bool $pastorized,
+        public bool $pasteurized,
         public int $minimumServingTemperature,
         public int $maximumServingTemperature,
         public array $translations,
